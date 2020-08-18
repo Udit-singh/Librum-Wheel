@@ -9,12 +9,12 @@ function validate(){
     error_message.style.padding = "10px";
     
     var text;
-    if(name.length < 5){
+    if(name.length < 3){
       text = "Please Enter valid Name";
       error_message.innerHTML = text;
       return false;
     }
-    if(subject.length < 10){
+    if(subject.length < 5){
       text = "Please Enter Correct Subject";
       error_message.innerHTML = text;
       return false;
@@ -29,11 +29,11 @@ function validate(){
       error_message.innerHTML = text;
       return false;
     }
-    if(message.length <= 140){
+    if(message.length <= 50){
       text = "Please Enter More Than 140 Characters";
       error_message.innerHTML = text;
       return false;
     }
-    alert("Form Submitted Successfully!");
+    alert("Form Submitted Successfully! Thank you,For your visit to Librum Wheels");
     return true;
   }
